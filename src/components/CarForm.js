@@ -3,6 +3,7 @@ import { changeName, changeCost, addCar } from "../store";
 
 function CarForm() {
   const dispatch = useDispatch();
+
   const { name, cost } = useSelector((state) => {
     return {
       name: state.form.name,
@@ -18,6 +19,7 @@ function CarForm() {
     const carCost = parseInt(event.target.value) || 0;
     dispatch(changeCost(carCost));
   };
+
   const handleSubmit = (event) => {
     event.preventDefault();
 
@@ -57,3 +59,5 @@ function CarForm() {
 }
 
 export default CarForm;
+
+

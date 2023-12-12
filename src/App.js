@@ -5,10 +5,10 @@ import CarValue from "./components/CarValue";
 
 function App() {
   return (
-    <div>
+    <div className="container is-fluid">
       <CarForm />
-      <CarList />
       <CarSearch />
+      <CarList />
       <CarValue />
     </div>
   );
@@ -16,4 +16,4 @@ function App() {
 
 export default App;
 
-// 328
+// 340
